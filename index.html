@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./style.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">  
     <title>Sample Site</title>
 
 </header>
@@ -12,15 +16,15 @@
     <div class="header">
         <div class="nav">
             <div class="logo">Header Logo</div>
-            <div class="link1">header link one</div>
-            <div class="link2">header link two</div>
-            <div class="link3">header linke three</div>
+            <a href=pages/link1.html class="link1"><div>link one</div></a>
+            <a href=pages/link2.html class="link2"><div>header link two</div></a>
+            <a href=pages/link3.html class="link3"><div>header link three</div></a>
         </div>
         <div class="intro">
             <div class="hello">
                 <h1>This website is awesome</h1>
                 <p>This website has subtext that goes here under the main title. It's a smaller font and the color is lower contrast.</p>
-                <button class="signup">Sign Up</button>
+                <a href=pages/signup.html><button class="signup">Sign Up</button></a>
             </div>
             <div class="image">this is placeholder for an image</div>
         </div>
@@ -49,21 +53,21 @@
 
     </div>
     <div class="inspo">
-        <p class="quote">This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</p>
-        <p class="attrib">-Thor, God of Thunder</p>
+        <div class="quote">This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</div>
+        <div class="attrib">-Thor, God of Thunder</div>
     </div>
-    <div class="footer">
-        <div class="signupbanner">
-            <div class="calltoaction">
-                <p class="callout">Call to action! It's time!</p>
-                <p>Sign up for our product by clicking that button right over there</p>
-            </div>
-            <div class="signupbutton">
-                <button class="signup2">Sign Up</button>
-            </div>
+    <div class="bluecallout">
+        <div class="calltoaction">
+            <div class="callout">Call to action! It's time!</div>
+            <p>Sign up for our product by clicking that button right over there</p>
+        </div>
+        <div class="signupbutton">
+            <a href=pages/signup.html> <button class="signup2">Sign Up </button></a>
         </div>
     </div>
-
+    <div class="footer">
+        <div>Copyright ©️ Odin Project 2021</div>
+    </div>
 </body>
 
 </html>

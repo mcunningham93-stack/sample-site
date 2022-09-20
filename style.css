@@ -1,80 +1,220 @@
+@font-face {
+    font-family: "Roboto";
+    src: "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" format("truetype");
+    font-weight: light;
+    font-style: italic;
+  }
+
+@font-face {
+    font-family: "Roboto";
+    src: "https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" format("truetype");
+    font-weight: bold;
+    font-style: normal;
+  }
+
 *{
     font-family: 'Roboto';
-    border: solid #79889e;
+   /*  border: solid #79889e; */
     margin: 0em;
-}
-
-body {
-
 }
 
 .header {
     background-color: #1F2937;
     color: white;
+    padding-top: 2%;
+    padding-bottom: 8%;
 }
 
 .nav {
+    /* border: solid pink; */
     display: flex;
-    justify-content: space-between;
-    max-width: 800px;
+    justify-content: space-around;
+    width: calc(70%);
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 8%;
 }
 
 .logo {
-    flex: 3;
+    flex: 2;
+}
+
+a {
+    text-decoration: none;
 }
 
 .link1,
 .link2,
 .link3 {
+    /*border: solid pink;*/
     flex: 1;
+    text-align: right;
+    padding-left: 1em;
+    color: rgb(214, 214, 214);
 }
 
 .intro {
+    /* border: solid pink; */
     display: flex;
-    max-width: 800px;
+    max-width: calc(70%);
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1em;
-    margin-bottom: 1em
+    
 }
 
 .hello {
     flex: 1;
+    padding-right: 2em;
+    align-items: stretch;
+}
+
+h1 {
+    margin-bottom: .2em;
+    font-size: 35pt;
+}
+
+p {
+    margin-bottom: .5em;
+    color: rgb(214, 214, 214);
+    font-size: 14pt;
 }
 
 .image {
     flex: 1;
     background-color: grey;
-    text-align: center;
-    margin: auto;
-    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .perks {
+    /* border: solid pink; */
     text-align: center;
-    max-width: 800px;
+    max-width: 650px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1em;
-    margin-bottom: 1em
+    margin-top: 3em;
+    margin-bottom: 5em
 }
 
 .gallery {
     display: flex;
     justify-content: space-between;
-    
+    margin-top: 1em;
+    gap: 2px;
+}
+
+.perk1,
+.perk2,
+.perk3,
+.perk4 {
+    align-content: center;
+    flex: 1;
+    padding: 10px;
+    font-size: .9em;
 }
 
 .thumbnail {
-    width: 100px;
-    height: 100px;
-    border: solid mediumaquamarine;
+    width: 130px;
+    height: 150px;
+    border: solid #3882F6;
+    border-width: .25em;
     border-radius: 1em;
-    
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: .5em;
 }
 
+.inspo {
+   /* border: solid green; */
+    background-color: rgb(225, 225, 225);
+    display:flex;
+    flex-direction: column;
+    vertical-align: middle;
+    padding: 10%;
+}
+
+.quote {
+    /* border: solid orange; */
+    max-width: calc(70%);
+    font-size: 1.75em;
+    line-height: 1.25em;
+    font-weight: light;
+    font-style: italic;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.attrib {
+    /* border: solid purple; */
+    width: calc(70%);
+    align-self: center;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: right;
+}
+
+.bluecallout {
+    width: calc(70%);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    margin-bottom: 5em;
+    background-color: #3882F6;
+    color: white;
+    border-radius: 10px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.calltoaction {
+   /* border: solid purple; */
+    flex: 3;
+}
+
+.callout {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.signupbutton {
+    /* border: solid pink; */
+    flex: 1;
+    align-self: center;
+    text-align: center;
+}
+
+.signup {
+    border-radius: .75em;
+    border: transparent;
+    color: white;
+    background-color: #3882F6;
+    font-weight: bold;
+    padding: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 1em;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.signup2 {
+    border-radius: .75em;
+    border: solid white;
+    color: white;
+    background-color: #3882F6;
+    font-weight: bold;
+    padding: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+.footer{
+    background-color: #1F2937;
+    color: white;
+    text-align: center;
+    padding: 3.5%;
+}
